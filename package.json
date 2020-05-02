@@ -1,0 +1,14 @@
+{
+  "name": "tschool_js_01",
+  "version": "1.0.0",
+  "description": "Домашняя работа JavaScript, Часть 1",
+  "main": "homework.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^25.5.2"
+  }
+}

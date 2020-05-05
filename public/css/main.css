@@ -1,0 +1,21 @@
+body {
+    padding: 10px;
+    font-family: 'Segoe UI', Roboto;
+}
+
+#generate-btn{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    width: 300px;
+}
+
+#generate-btn:hover{
+    background-color: darkseagreen;
+}
+

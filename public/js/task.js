@@ -24,7 +24,6 @@ function task(){
     document.getElementById('arr2').innerHTML = '<p><b>Array 2</b></p>' + arr2.join(' ');
     document.getElementById('arr3').innerHTML = '<p><b>Array 3</b></p>' + arr3.join(' ');
     document.getElementById('mid').innerHTML = '<p><b>Average of Array 3</b></p>' + average;
-
 }
 
 document.getElementById("generate-btn").addEventListener('click', task);

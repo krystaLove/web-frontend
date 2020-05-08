@@ -1,4 +1,4 @@
-# Lesson 5
+# Lesson 4
 Практика **JavaScript**
 
 ## Задание

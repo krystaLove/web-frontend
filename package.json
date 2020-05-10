@@ -1,0 +1,22 @@
+{
+  "name": "web-frontend-lesson-0",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/krystaLove/web-frontend/tree/lesson-0"
+  },
+  "keywords": [
+    "node.js"
+  ],
+  "author": "Denis Zhuravkov",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

@@ -1,0 +1,215 @@
+
+body {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100%;
+    height: 100%;
+}
+
+#content-hider{
+    display: none;
+    position: absolute;
+    min-height: 100%;
+    min-width: 100%;
+    z-index: 2;
+}
+
+#content-wrapper{
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.card-wrapper-header{
+    font-size: 24px;
+    height: 60px;
+    width: 600px;
+    align-self: center;
+    margin-top: 40px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+.header__logo-wrapper img {
+    height: 35px;
+    width: 35px;
+}
+
+.header__logo-wrapper {
+    cursor: pointer;
+    margin: 40px;
+}
+
+.header__logo-wrapper span {
+    padding-left: 8px;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.header__logo-wrapper span:after {
+    content: "";
+    display: block;
+    border-top: 5px solid black;
+    margin-top: 20px;
+    width: 150px;
+    margin: 20px auto;
+    transition: 0.3s;
+}
+
+.header__logo-wrapper span:hover::after {
+    width: 250px;
+    transition: 0.3s;
+}
+
+.header__about {
+    max-width: 700px;
+    margin: 0px auto;
+}
+
+#teacher-card-wrapper{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+#student-card-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.member-card {
+    background-color: white;
+    display: flex;
+    flex-flow: column nowrap;
+    align-content: center;
+    width: 300px;
+    margin: 50px;
+    margin-top: 100px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+.member-card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.member-card__photo {
+    align-self: center;
+    border-radius: 50%;
+    object-fit: fill;
+    width: 200px;
+    height: 200px;
+}
+
+.member-card__info {
+    padding-bottom: 40px;
+}
+
+.member-card__name {
+    font-size: 24px;
+}
+
+.member-card__organization {
+    font-size: 18px;
+    color: grey;
+}
+
+#badge {
+    border-radius: 5px;
+    display: none;
+    position: sticky;
+    flex-flow: column nowrap;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 500px;
+    height: 210px;
+    background-color: white;
+    transform-origin: center center;
+    left: 35%;
+    bottom: 35%;
+    
+    z-index: 2;
+}
+
+#badge__button-close {
+    height: 30px;
+    width: 25px;
+    margin: 5px;
+    background-image: url(/img/close-btn.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-self: flex-end;
+    cursor: pointer;
+}
+
+#badge__content-wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    height: 100%;
+    width: 100%;
+}
+
+#badge__content-wrapper__info-container {
+    display: flex;
+    flex-flow: column nowrap;
+    align-content: flex-start;
+    text-align: start;
+    font-size: 16px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding: 8px;
+    flex: 5;
+}
+
+#badge__photo-wrapper {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    flex: 3;
+}
+
+#badge__photo {
+    object-fit: cover;
+    height: 140px;
+    border-radius: 5px;
+    align-self: center;
+}
+
+#badge__name {
+    margin-top: 12px;
+    font-size: 26px;
+    align-self: flex-start;
+}
+
+#badge__bday {
+    margin-top: 12px;
+}
+
+#badge__bday::before {
+    content: "День рождения: ";
+    color: gray; 
+}
+
+#badge__university {
+    margin-top: 12px;
+}
+
+#badge__university::before {
+    content: attr(data-before);
+    color: gray;
+}
+
+#badge__subject{
+    display: none;
+    margin-top: 12px;
+}
+
+#badge__subject::before{
+    content: 'Дисциплина: ';
+    color: gray;
+}

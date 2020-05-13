@@ -1,12 +1,48 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
+
 <head>
-	<title>Hello!</title>
+    <meta charset="utf-8" />
+    <title>Little Endian</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" />
 </head>
+
 <body>
-	<center>
-		<h1>Ой, ну привет!</h1>
-		<img src="images/hedgehog.jpg" width="50%" height="50%">
-	</center>
+    <div id="content-hider"></div>
+    <div id="content-wrapper">
+        <header>
+            <div class="header__logo-wrapper">
+                <img src="img/logo.jpg" alt="Little Endian" />
+                <span>Очень крутая школа</span>
+            </div>
+            <p class="header__about">
+                Это страница самой крутой в школы наикрутейшем городе с самым крутым руководством
+            </p>
+        </header>
+        <span class="card-wrapper-header">Наши учителя</span>
+        <div id="teacher-card-wrapper"></div>
+        <span class="card-wrapper-header">Наши ученики</span>
+        <div id="student-card-wrapper"></div>
+    </div>
+
+    <div id="badge">
+        <div id="badge__button-close"></div>
+        <div id="badge__content-wrapper">
+            <div id="badge__content-wrapper__info-container">
+                <span id="badge__name"></span>
+                <span id="badge__bday"></span>
+                <span data-before="" id="badge__university"></span>
+                <span id="badge__subject"></span>
+            </div>
+            <div id="badge__photo-wrapper">
+                <img id="badge__photo">
+            </div>
+        </div>
+    </div>
+
+    <script defer src="js/main.js"></script>
+
 </body>
+
 </html>
